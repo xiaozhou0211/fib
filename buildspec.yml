@@ -1,32 +1,5 @@
 version: 0.2
 
-stages:
-  - install
-  - unit-test
-  - phases
-  - artifacts
-
-install:
-  stage: install
-  tags:
-    - digital-dev
-  before_script:
-    - npm install envsub@4.0.7 -g
-  script:
-    - npm install --ignore-scripts
-
-unit-test:
-  stage: unit-test
-  tags:
-    - digital-dev
-  script:
-    - npm install -g jest
-    - npm test --coverage
-  artifacts:
-    paths:
-      - coverage/
-  needs: ["install"]
-
 phases:
   pre_build:
     commands:
