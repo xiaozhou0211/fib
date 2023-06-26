@@ -4,11 +4,11 @@ import FibonacciList from '../components/fibList';
 function FibListPage() {
     return (
         <>
-            <div className="App">
-                <header className="App-header">
-                    <h3>Fibonacci List</h3>
+            <div className="container" data-testid='fibList-container'>
+                <div className="App-header">
+                    <h3 className='PageTitle'>Fibonacci List</h3>
                     <FibonacciList></FibonacciList>
-                </header>
+                </div>
             </div>
         </>
     );

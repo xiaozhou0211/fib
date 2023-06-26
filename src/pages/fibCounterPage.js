@@ -3,12 +3,13 @@ import FibonacciCounter from '../components/fibCounter';
 
 function FibCounterPage() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <FibonacciCounter></FibonacciCounter>
-            </header>
-        </div>
+        <>
+            <div className="container">
+                <div className="App-header">
+                    <FibonacciCounter></FibonacciCounter>
+                </div>
+            </div>
+        </>
     );
 }
-
 export default FibCounterPage;
